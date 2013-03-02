@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Data analysis and report generation tool</title>
+			<link type = "text/css" rel= "stylesheet" href = "css/login.css" > </link>
+			<script src="js/jquery.js"> </script>
+			<script src="js/jquery.tools.min.js"> </script>
+			<script type="text/javascript" src="js/login.js"> </script>
+			
+	</head>
+	
+	<body>
+			
+	<h1> Data analysis and report generation tool</h1>
+	
+
+			<div><h5 style = "text-align:right;text-decoration:none"><a href= "#" id = "adminButton"> Admin </a></h5></div>
+			<div  > <input type="date" id = "date" class = "date" /></div>
+			
+			<div id = "userForm"> 
+			<form name = "userLogin" method ="get " action = "userInfo.html">
+			<fieldset>
+				<legend style ="color:red; font-size: 24px;"> Login </legend>
+				Username: <input type= "text", value="username"></br></br>
+				Password: <input type= "password", value="pwd"></br></br>
+				
+					<p style= "text-align:center">  <input type = "button" value= "Sign in"name = "send", > </p>
+					
+			</fieldset>
+			</div>
+			</form>
+			
+			<div id ="adminForm" >
+			<form name =  "adminLogin" method = "Get" action = "admin.html">
+			<fieldset>
+				<legend style ="color:red; font-size: 24px;"> Admin </legend>
+				Username: <input type= "text", value="username"></br></br>
+				Password: <input type= "password", value="pwd"></br></br>
+					<p style= "text-align:center">  <input type = "submit" value= "Sign in"> </p>
+					<p style= "text-align:right"> <a href = "" id = "signInAsAnotherUser">sign in as other user </a> </p>
+			</fieldset>
+			</form>
+			</div>
+	</body>
+
+
+</html>

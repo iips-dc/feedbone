@@ -1,0 +1,25 @@
+.showArea{
+	
+}
+
+
+#showUser{
+	width:1080px;
+	height:500px;
+	background:green;
+	
+}
+#showStatus{
+	width:1080px;
+	height:500px;
+	background:red;
+	display:none;
+}
+#generateReport{
+	width:1080px;
+	height:500px;
+	background:gray;
+	display:none;
+}
+
+			
