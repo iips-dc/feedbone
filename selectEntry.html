@@ -7,12 +7,52 @@
 	<body>
 			
 	
-			<form action = "">
+
 			<fieldset>
-			<input type = 
+				<legend> Select the course for Entry</legend>
+			 <label>Course</label>
+			 <script>
+			 	var course;
+			 </script>
+			 <select required id= "course" onchange="listsem()">  
+			 	
+			 	<option value="MCA"> MCA</option>	
+			 	<option value="MTECH">M Tech </option>
+			 	<option value="MBA">MBA</option>
+			 	<option value="BCOM">B.COM</option>
+			 	<option></option>
+			 	
+			 </select> 
 				
-			</fieldset>
+			<label>Semester</label>
 			
+			<select id ="semesterList">	</select>
+			</fieldset>
+			<script > 
+				function listsem(){
+					var x=document.getElementById("course").selectedIndex;
+					var y=document.getElementById("course").options;
+					var semList = 0;
+					if (y[x].text == "MCA"){ semList = 12;}
+					else if (y[x].text == "M Tech"){ semList = 12;}
+					else if (y[x].text == "MBA"){ semList = 12;}
+					else { semList = 6;}
+					//alert("Index: " + y[x].index + " is " + y[x].text + "semlist" + semList);
+					// here is a small bug for semester list update on change.
+					var s = document.getElementById("semesterList");
+					
+					var i =0;
+					if (s.options.length >= 12 ){s.options.length = 0;}
+					for(i = 0;i < semList;i++){
+						s.options[s.options.length]= new Option(i+1, s.options.length + 1);
+					}
+					
+
+		
+				}	
+			</script>
+			
+
 			</form>
 	</body>
 
